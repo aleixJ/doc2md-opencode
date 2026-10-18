@@ -1,0 +1,26 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node artifacts (OpenCode scaffolds plugin deps inside .opencode/)
+node_modules/
+.opencode/node_modules/
+.opencode/package.json
+.opencode/package-lock.json
+.opencode/bun.lock
+.opencode/.gitignore
+
+# Generated extraction cache / outputs
+.doc2md_cache/
+**/.doc2md_cache/
+**/.doc2md_cache/**/*.png
+**/.doc2md_cache/**/*.txt
+**/.doc2md_cache/**/*.json
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

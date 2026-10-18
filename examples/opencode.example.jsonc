@@ -1,0 +1,27 @@
+{
+  // Optional. doc2md-opencode works with OpenCode defaults; this file only
+  // pins skill permission and image limits.
+  //
+  // Placement (both work on OpenCode 1.19+ and v2):
+  //  - <project>/opencode.jsonc
+  //  - <project>/.opencode/opencode.jsonc
+  //
+  // Keys `permission` (singular) and `attachment.image` are accepted by both
+  // v1 (native) and v2 (deprecated but functional).
+  // Do NOT use `media.*` or a bare `skills` array here: OpenCode 1.19 rejects
+  // unknown top-level keys with ConfigInvalidError.
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "skill": {
+      "doc-to-md": "allow"
+    }
+  },
+  "attachment": {
+    "image": {
+      "auto_resize": true,
+      "max_width": 2000,
+      "max_height": 2000,
+      "max_base64_bytes": 5242880
+    }
+  }
+}
